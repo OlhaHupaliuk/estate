@@ -1,0 +1,60 @@
+@use "./satoshi.css";
+
+.header {
+  width: 90%;
+  height: 90px;
+  border-radius: 128px;
+  background: rgba(255, 255, 255, 0.03);
+  justify-content: space-between;
+  margin: 40px auto;
+
+  .logoContainer {
+    height: 60px;
+    align-items: center;
+    margin-left: 62px;
+  }
+
+  &__btn {
+    height: inherit;
+    border-radius: 20px 100px 100px 20px;
+    background: var(--secondary-bg-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    width: 12%;
+  }
+}
+
+.navBar {
+  font-size: 20px;
+  gap: 50px;
+  &__item {
+    color: var(--secondary-bg-color);
+    transition: color 0.3s ease;
+    position: relative;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #ffffff8a;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--secondary-bg-color);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transform: translateX(-50%) scale(0.5);
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+  }
+}

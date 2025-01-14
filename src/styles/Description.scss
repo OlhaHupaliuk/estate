@@ -1,0 +1,70 @@
+@use "./satoshi.css";
+.dscript__container {
+  font-family: Satoshi, sans-serif;
+  margin-bottom: 80px;
+  width: 1800px;
+
+  gap: 46px;
+  //   justify-self: center;
+  .dscript__img {
+    width: 447px;
+    border-radius: 80px;
+  }
+
+  .dscript__content {
+    padding: 100px 197px 258px 234px;
+    border-radius: 80px;
+    background-color: var(--secondary-bg-color);
+
+    .end {
+      align-items: flex-end;
+      .dscript__span {
+        width: 223px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+      }
+
+      .dscript__num {
+        width: 223px;
+        font-size: 71.673px;
+        font-weight: 700;
+        line-height: 84.704px;
+      }
+    }
+
+    .centerContent {
+      margin-top: 62px;
+      gap: 49px;
+      .dscript__title {
+        font-size: 76px;
+        font-weight: 700;
+        line-height: 102%;
+        letter-spacing: -2.28px;
+      }
+      .dscript__p {
+        color: var(--main-bg-color);
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 36px;
+        align-self: stretch;
+      }
+      .dscript__btn {
+        display: flex;
+        width: 226px;
+        height: 74px;
+        padding: 33px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        color: var(--secondary-bg-color);
+        font-family: Satoshi, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        border-radius: 26px;
+        background: var(--main-bg-color);
+      }
+    }
+  }
+}

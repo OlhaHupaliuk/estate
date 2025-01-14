@@ -1,0 +1,46 @@
+.lastSlide {
+  margin: 80px 0px;
+  width: 1800px;
+  flex-shrink: 0;
+  border-radius: 80px;
+  background: #111b31;
+  color: #fff;
+  padding: 125px 65px 100px 100px;
+  &_row {
+    width: 1635px;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    .title {
+      width: 980px;
+      font-size: 175.209px;
+      font-weight: 500;
+      line-height: 175.209px;
+      letter-spacing: -3.504px;
+    }
+    &__btn {
+      color: #fff;
+      font-size: 27.487px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 33.982px;
+      border: none;
+      display: flex;
+      width: 320px;
+      height: 344px;
+      padding: 46.726px 33.982px;
+      justify-content: center;
+      align-items: center;
+      gap: 11.327px;
+      border-radius: 76.81px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+  &__p {
+    width: 614px;
+    font-size: 43.889px;
+    font-weight: 300;
+    line-height: 52.667px;
+    opacity: 0.7;
+    margin-bottom: 220px;
+  }
+}
